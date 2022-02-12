@@ -1,0 +1,89 @@
+.container{
+    margin: 20px 0;
+    border-width: 2px;
+    border-style: solid;
+    border-color: lightgrey;
+    height: 90vh;
+    position: relative;
+    transform: scale(0.75); 
+    overflow: hidden;   
+}
+
+#diagram {
+    /* margin: 20px 0;
+    border-width: 2px;
+    border-style: solid;
+    border-color: lightgrey;
+    height: 90vh; */
+    position: relative;
+    transform: scale(0.75);
+}
+
+.nodes {
+    border: 1px solid #2E2E2E;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: move;
+    height: fit-content;
+    height: -moz-max-content;
+    background-color: white;
+    width: 129px;
+    padding: 6px;
+    color: #2E2E2E;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+}
+
+::ng-deep .jtk-overlay{
+    background: #fff !important;
+    z-index: 11 !important;
+    padding: 0 5px !important;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    color: #2E2E2E;
+}
+#created{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #0077AA;
+}
+#created span{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 21px;
+    text-align: center;
+    color: #ffff;
+    margin-top: 32%;
+    margin-left: 3%;
+    display: inline-block;
+}
+#approved{
+    border: 3px solid #3CB056;
+    width: 129px;
+    height: fit-content;
+    padding: 10px;
+    color: #3CB056;
+}
+#denied{
+    border: 3px solid #D44946;
+    width: 129px;
+    height: fit-content;
+    padding: 10px;
+    color: #D44946;
+}
+::ng-deep .custom-connector path{
+    stroke-width: 1;
+}
